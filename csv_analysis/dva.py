@@ -36,5 +36,4 @@ for i in range(len(initials)):
     out.writerow([initials[i], gender[i], age[i], major[i], answer1[i], answer2[i]])
 
 print len(uniquemajors)
-for i in uniquemajors:
-    print (i)
+
