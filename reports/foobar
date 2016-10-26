@@ -1,0 +1,13 @@
+import glob
+import openpyxl as xl
+import os
+a=glob.glob('*.xlsx')
+initials=[]
+gender=[]
+age=[]
+major=[]
+
+for i,j in enumerate(a):
+    k=j.replace(' ','\ ')
+    os.system('ssconvert '+ k + ' survey'+str(i)+'.csv')
+
